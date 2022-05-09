@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "212457433493",
+    "firebase_url": "https://streetcourts-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "streetcourts",
+    "storage_bucket": "streetcourts.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212457433493:android:3cb87f52e553137e74ee9c",
+        "android_client_info": {
+          "package_name": "com.ferit.streetcourts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212457433493-1i4ote85dvjv8me90qvmvqjeelkd72jb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc8TGY0cwERUKzbrHMQX2dZc2P_PgkB6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212457433493-1i4ote85dvjv8me90qvmvqjeelkd72jb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

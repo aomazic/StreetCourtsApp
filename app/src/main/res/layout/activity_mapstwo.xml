@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="38dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/UkRatingText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PodlogaText" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="0dp"
+            android:layout_height="155dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:context=".mapstwo" />
+
+        <ImageView
+            android:id="@+id/glavnaslika"
+            android:layout_width="0dp"
+            android:layout_height="197dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/JavnoText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/map"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+
+            android:id="@+id/ImeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="84dp"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/map" />
+
+        <TextView
+
+            android:id="@+id/AdresaText"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textColor="#FDFDFD"
+            app:layout_constraintBottom_toBottomOf="@+id/glavnaslika"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.056"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ImeText"
+            app:layout_constraintVertical_bias="0.058" />
+
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/gotorev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#673AB7"
+            android:text="@string/rev"
+            app:icon="@android:drawable/stat_notify_chat"
+            app:layout_constraintBottom_toBottomOf="@+id/glavnaslika"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/map"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:text="@string/brojtr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/glavnaslika" />
+
+        <TextView
+            android:id="@+id/BrojTerenaText"
+            android:layout_width="75dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="@string/ras"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/glavnaslika" />
+
+        <TextView
+            android:id="@+id/RasvjetaText"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="@string/dim"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/glavnaslika" />
+
+        <TextView
+            android:id="@+id/DimenzijeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/RasvjetaText"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="@string/pod"
+            app:layout_constraintStart_toEndOf="@+id/DimenzijeText"
+            app:layout_constraintTop_toBottomOf="@+id/glavnaslika" />
+
+        <TextView
+            android:id="@+id/PodlogaText"
+            android:layout_width="55dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/DimenzijeText"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <com.taufiqrahman.reviewratings.RatingReviews
+            android:id="@+id/rating_reviews"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="10dp"
+            app:animation="true"
+            app:rounded="true"
+            app:layout_constraintBottom_toTopOf="@+id/revbut"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/UkRatingText"
+            app:layout_constraintTop_toBottomOf="@+id/PodlogaText"
+            app:layout_constraintVertical_bias="0.0"
+            app:show_label="true"
+            app:spaces="0dp"
+            app:text_size="10sp"
+            app:width="15dp"
+            app:text_color="@color/design_default_color_background">
+
+        </com.taufiqrahman.reviewratings.RatingReviews>
+
+        <TextView
+            android:id="@+id/UkRatingText"
+            android:layout_width="106dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/ratingBar"
+            app:layout_constraintEnd_toStartOf="@+id/rating_reviews"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RasvjetaText"
+            app:layout_constraintVertical_bias="0.86" />
+
+        <TextView
+            android:id="@+id/UkRatingBrojText"
+            android:layout_width="32dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/revbut"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="0.972"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/UkRatingBrojText"
+            app:layout_constraintEnd_toStartOf="@+id/rating_reviews"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/revbut"
+            android:layout_width="338dp"
+            android:layout_height="44dp"
+            android:text="@string/napisirev"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="19dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/revbut"
+            app:layout_constraintEnd_toStartOf="@+id/rating_reviews"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_baseline_person_24" />
+
+        <TextView
+            android:id="@+id/JavnoText"
+            android:layout_width="68dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#2E7D32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.098"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/glavnaslika" />
+
+
+        <TextView
+            android:id="@+id/SkolskoText"
+            android:layout_width="68dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="200dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#2E7D32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.004"
+            app:layout_constraintStart_toEndOf="@+id/JavnoText"
+            app:layout_constraintTop_toBottomOf="@+id/glavnaslika" />
+
+
+        <TextView
+            android:id="@+id/WcText"
+            android:layout_width="68dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="150dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#2E7D32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/SkolskoText"
+            app:layout_constraintTop_toBottomOf="@+id/glavnaslika" />
+
+
+        <TextView
+            android:id="@+id/SvlacionicaText"
+            android:layout_width="81dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#2E7D32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/WcText"
+            app:layout_constraintTop_toBottomOf="@+id/glavnaslika" />
+
+</androidx.constraintlayout.widget.ConstraintLayout></ScrollView>

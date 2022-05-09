@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">StreetCourts</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="submit">Pošalji</string>
+    <string name="revbut">Write a review</string>
+    <string name="dim">Dimenzije:</string>
+    <string name="ras">Rasvjeta:</string>
+    <string name="pod">Podloga:</string>
+    <string name="brojtr">Broj Terena:</string>
+    <string name="name">Ime i prezime</string>
+    <string name="title_activity_second">second</string>
+    <string name="title_activity_mapstwo">mapstwo</string>
+    <string name="napisirev">Napisi recenziju</string>
+    <string name="rev">recenzije</string>
+    <string name="revtext">Text</string>
+    <string name="Cancel">Odustani</string>
+    <string name="req">Rating obavezan</string>
+</resources>
